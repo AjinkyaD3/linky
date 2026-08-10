@@ -1,0 +1,6 @@
+[submodule "linky-frontend-nextjs"]
+	path = linky-frontend-nextjs
+	url = https://github.com/AjinkyaD3/linky-frontend-nextjs.git
+[submodule "linky-backend-springbootm"]
+	path = linky-backend-springbootm
+	url = https://github.com/AjinkyaD3/linky-backend-springboot.git
