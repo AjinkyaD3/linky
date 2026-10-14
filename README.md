@@ -14,7 +14,8 @@ generation, and detailed click analytics powered by device and browser parsing.
 - **Link Organization** - Tag, favorite, archive, and duplicate links
 - **Analytics Dashboard** - Track clicks with browser, OS, device, and referrer breakdowns
 - **Authentication** - JWT-based auth with access/refresh tokens, plus API keys for programmatic access
-- **Rate Limiting** - Redis-backed protection against abuse
+- **Rate Limiting** - Redis-backed (atomic Lua) protection for link creation, login, registration, password reset and unlock
+- **Built to scale** - two-level redirect cache, stream-based click pipeline, Flyway migrations, Prometheus metrics; see [scaling notes](linky-backend-springboot/docs/SCALING.md) and [load-test results](linky-backend-springboot/loadtest/README.md)
 
 ## Tech Stack
 
