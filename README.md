@@ -8,7 +8,7 @@ generation, and detailed click analytics powered by device and browser parsing.
 
 ## Features
 
-- **Core Shortening** - Generate short links (Base62-encoded IDs) or custom aliases
+- **Core Shortening** - Generate short links (random, unguessable Base62 codes) or custom aliases
 - **Access Control** - Private links, password-protected links, and one-time-use (self-destructing) links
 - **QR Codes** - Auto-generated downloadable QR codes for every short link
 - **Link Organization** - Tag, favorite, archive, and duplicate links
