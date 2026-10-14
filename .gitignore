@@ -6,3 +6,6 @@ AGENTS.md
 # editor / local scratch
 .vscode/
 chat.txt
+
+# Personal notes: local only
+docs/internal/
