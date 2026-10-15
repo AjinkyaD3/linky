@@ -246,7 +246,7 @@ rejected, re-checked before every delivery, redirects never followed). Dependenc
 
 Honest list, because every project has one:
 
-- The analytics queries load all clicks in the window into memory and the link list is not paginated; both need SQL aggregation, a rollup table and pagination before very large accounts.
+- Analytics now aggregate clicks per day in SQL, and `GET /api/url/my` supports `page`/`size` (with an `X-Total-Count` header). The dashboard does not use paging yet, and favorites/archived lists are still unpaginated; a rollup table is the next step for very large accounts.
 - Avatar uploads are validated by content (PNG/JPEG/GIF/WebP, 2 MB) but are stored on local disk and not re-encoded.
 - Webhook secrets are stored in plaintext (they must be, to sign requests); encrypting them at rest is the next step.
 - There is no malicious-URL screening or abuse reporting, so a public deployment needs one before accepting anonymous links.
