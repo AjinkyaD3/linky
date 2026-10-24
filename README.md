@@ -237,7 +237,7 @@ npm test && npx tsc --noEmit && npx eslint . && npm run build
 
 ## Security
 
-BCrypt passwords and API keys; short-lived JWTs with hashed, rotating refresh tokens and replay detection (sessions end on password change); hashed password-reset tokens; hashed visitor IPs;
+BCrypt passwords; SHA-256-hashed API keys (older BCrypt keys are upgraded on first use); refresh tokens can never be used as access tokens; short-lived JWTs with hashed, rotating refresh tokens and replay detection (sessions end on password change); hashed password-reset tokens; hashed visitor IPs;
 strict security headers (CSP, HSTS, frame and sniffing protection); parameterised queries; http/https-only targets; atomic Redis rate
 limiting on creation, login and unlock; and **SSRF protection** for webhooks (internal, loopback, link-local and cloud-metadata addresses are
 rejected, re-checked before every delivery, redirects never followed). Dependencies are scanned in CI.
